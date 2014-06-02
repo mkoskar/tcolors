@@ -11,7 +11,7 @@
 
     :Compatibility: Python 2.7 / 3.2
     :Copyright: (c) 2014 Miroslav Koskar (http://miroslavkoskar.com/)
-    :License: BSD, see LICENSE for details
+    :License: BSD 2-Clause, see LICENSE for details
 """
 
 from __future__ import print_function

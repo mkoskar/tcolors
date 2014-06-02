@@ -2,7 +2,7 @@ tcolors
 =======
 
 :Description: Suite of scripts for dealing with terminal ANSI colors
-:License: BSD, see LICENSE for details
+:License: BSD 2-Clause, see LICENSE for details
 
 Overview:
 
