@@ -6,7 +6,8 @@ tcolors
 
 Overview:
 
-* ``tcolors`` - get / set terminal ANSI colors
+* ``tcolors`` - get / set terminal ANSI colors (palette, foreground,
+  background, cursor)
 * ``tcolors-gtk`` - simple GTK interface for ``tcolors``
 * ``tcolorsinfo`` - test terminal ANSI colors
 * ``tcolorsinfo8`` - ``tcolorsinfo`` wrapper for quick test of base 8 colors
