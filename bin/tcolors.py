@@ -17,6 +17,7 @@
 from __future__ import print_function
 
 from contextlib import contextmanager
+from signal import signal, SIG_DFL, SIGINT
 from sys import exit, stdin, stdout, stderr
 import os
 import re
@@ -269,7 +270,8 @@ if __name__ == '__main__':
             parser.print_usage()
             exit(2)
     except KeyboardInterrupt:
-        exit(130)
+        signal(SIGINT, SIG_DFL)
+        os.kill(os.getpid(), SIG_DFL)
     except RuntimeError as e:
         print('{}: error: {}'.format(parser.prog, e), file=stderr)
         exit(1)

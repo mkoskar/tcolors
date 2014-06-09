@@ -13,9 +13,10 @@
 
 from __future__ import print_function
 
+from os import kill
+from signal import signal, SIG_DFL, SIGINT
 from sys import exit, stdout
 import argparse
-import signal
 import sys
 import textwrap
 
@@ -169,12 +170,13 @@ try:
     else:
         main.init_tcolors()
 except KeyboardInterrupt:
-    exit(130)
+    signal(SIGINT, SIG_DFL)
+    os.kill(os.getpid(), SIG_DFL)
 except RuntimeError as e:
     print('{}: error: {}'.format(parser.prog, e), file=stderr)
     exit(1)
 
-signal.signal(signal.SIGINT, signal.SIG_DFL)
+signal(SIGINT, SIG_DFL)
 
 screen = Gdk.Screen.get_default()
 css_provider = Gtk.CssProvider()

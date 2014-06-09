@@ -1,8 +1,9 @@
 tcolors
 =======
 
-:Description: Suite of scripts for dealing with terminal ANSI colors
+:Description: Get & Set terminal ANSI colors
 :License: BSD 2-Clause, see LICENSE for details
+:AUR: https://aur.archlinux.org/packages/tcolors-git/
 
 Overview:
 
