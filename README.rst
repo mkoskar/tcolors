@@ -211,7 +211,7 @@ switcher / selector. That's handy for switching between couple of favorite
 schemes, or trying out new schemes.
 
 To serve this purpose I've created myself simple bash script called ``tcolors-sel``
-(`source <https://github.com/miroslavkoskar/homefiles/blob/master/bin/tcolors-sel>`_).
+(`source <https://github.com/mkoskar/homefiles/blob/master/bin/tcolors-sel>`_).
 It is built on top of ``scroller``
-(`source <https://github.com/miroslavkoskar/homefiles/blob/master/bin/scroller>`_)
+(`source <https://github.com/mkoskar/homefiles/blob/master/bin/scroller>`_)
 which is separate program providing simple VI like scrolling over its arguments.
