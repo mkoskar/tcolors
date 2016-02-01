@@ -10,7 +10,7 @@
     http://xyne.archlinux.ca/projects/python3-colorsysplus/.
 
     :Compatibility: Python 2.7 / 3.2
-    :Copyright: (c) 2014 Miroslav Koskar (http://mkoskar.com/)
+    :Copyright: (c) 2014 Miroslav Koskar <http://mkoskar.com/>
     :License: BSD 2-Clause, see LICENSE for details
 """
 
