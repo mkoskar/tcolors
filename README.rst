@@ -2,7 +2,7 @@ tcolors
 =======
 
 :Description: Get & Set terminal ANSI colors
-:License: BSD 2-Clause, see LICENSE for details
+:License: Apache 2.0
 :AUR: https://aur.archlinux.org/packages/tcolors-git/
 
 Overview:

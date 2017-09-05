@@ -10,7 +10,7 @@
     http://xyne.archlinux.ca/projects/python3-colorsysplus/.
 
     :Compatibility: Python 2.7 / 3.2
-    :Copyright: (c) 2014 Miroslav Koskar <http://mkoskar.com/>
+    :Copyright: (c) 2014 Miroslav Koškár <http://mkoskar.com/>
     :License: BSD 2-Clause, see LICENSE for details
 """
 
@@ -80,7 +80,7 @@ def get_xcolors(file=None, prefix=None):
     else:
         proc = subprocess.Popen(['cpp', '-P'], stdin=stdin, stdout=subprocess.PIPE)
     xcolors = []
-    xcolor_pattern = re.compile(re.escape(prefix) + r'\.?'
+    xcolor_pattern = re.compile(re.escape(prefix) +
             '(color(\d+)|(foreground)|(background)|(cursorColor))\s*:(.*)$')
     while True:
         line = proc.stdout.readline()
@@ -260,11 +260,11 @@ if __name__ == '__main__':
             else:
                 output = []
                 with get_term_colors():
-                    output.append('{}.foreground: {}'.format(args.prefix, get_colorfg()))
-                    output.append('{}.background: {}'.format(args.prefix, get_colorbg()))
-                    output.append('{}.cursorColor: {}'.format(args.prefix, get_colorcur()))
+                    output.append('{}foreground: {}'.format(args.prefix, get_colorfg()))
+                    output.append('{}background: {}'.format(args.prefix, get_colorbg()))
+                    output.append('{}cursorColor: {}'.format(args.prefix, get_colorcur()))
                     for n in range(0, 16):
-                        output.append('{}.color{}: {}'.format(args.prefix, n, get_colorp(n)))
+                        output.append('{}color{}: {}'.format(args.prefix, n, get_colorp(n)))
                 print('\n'.join(output))
         else:
             parser.print_usage()
